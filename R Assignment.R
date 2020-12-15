@@ -38,13 +38,13 @@ my_matrix$getInverse()
 my_matrix$getInverse()
 
 ## Random numbers and create cache and retrieve the inverse
-my_matrix <- makeCacheMatrix(matrix(c(105,95,766,83), 2, 2))
+my_matrix <- makeCacheMatrix(matrix(c(115,85,756,73), 2, 2))
 my_matrix$get()
 cacheSolve(my_matrix)
 cacheSolve(my_matrix)
 my_matrix$getInverse()
 
-my_matrix <- makeCacheMatrix(matrix(c(657, 6373, 546, 3), 2, 2))
+my_matrix <- makeCacheMatrix(matrix(c(567, 5373, 646, 5), 2, 2))
 my_matrix$get()
 cacheSolve(my_matrix)
 cacheSolve(my_matrix)
