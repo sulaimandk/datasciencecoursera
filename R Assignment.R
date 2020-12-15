@@ -39,3 +39,8 @@ cacheSolve(my_matrix)
 cacheSolve(my_matrix)
 my_matrix$getInverse()
 
+my_matrix <- makeCacheMatrix(matrix(c(657, 6373, 546, 3), 2, 2))
+my_matrix$get()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+my_matrix$getInverse()
