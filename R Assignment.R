@@ -27,3 +27,25 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
+
+## Create a "matrix" with the numbers from 1 to 4 and create cache and retrieve the inverse
+
+my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+my_matrix$get()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+my_matrix$getInverse()
+my_matrix$getInverse()
+
+## Random numbers and create cache and retrieve the inverse
+my_matrix <- makeCacheMatrix(matrix(c(115,85,756,73), 2, 2))
+my_matrix$get()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+my_matrix$getInverse()
+
+my_matrix <- makeCacheMatrix(matrix(c(567, 5373, 646, 5), 2, 2))
+my_matrix$get()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+my_matrix$getInverse()
