@@ -1,3 +1,4 @@
+## The following function create "matrix" object that will cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -13,6 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
+## This function computes the inverse of the "matrix" makeCacheMatrix.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
@@ -26,6 +28,8 @@ cacheSolve <- function(x, ...) {
   inv
 }
 
+## Create a "matrix" with the numbers from 1 to 4 and create cache and retrieve the inverse
+
 my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 my_matrix$get()
 cacheSolve(my_matrix)
@@ -33,6 +37,7 @@ cacheSolve(my_matrix)
 my_matrix$getInverse()
 my_matrix$getInverse()
 
+## Random numbers and create cache and retrieve the inverse
 my_matrix <- makeCacheMatrix(matrix(c(105,95,766,83), 2, 2))
 my_matrix$get()
 cacheSolve(my_matrix)
