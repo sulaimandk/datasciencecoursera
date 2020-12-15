@@ -25,3 +25,10 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
+
+my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+my_matrix$get()
+cacheSolve(my_matrix)
+cacheSolve(my_matrix)
+my_matrix$getInverse()
+my_matrix$getInverse()
